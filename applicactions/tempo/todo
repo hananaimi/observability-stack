@@ -1,0 +1,1 @@
+helm -n tempo install tempo grafana/tempo-distributed -f custom.yaml

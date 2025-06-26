@@ -1,0 +1,22 @@
+datasources:
+  datasources.yaml:
+    apiVersion: 1
+    datasources:
+      - name: loki
+        type: loki
+        url: http://loki-gateway.loki.svc.cluster.local
+        access: proxy
+        editable: true
+        isDefault: true
+      - name: mimir
+        type: prometheus
+        url: http://mimir-gateway.mimir.svc.cluster.local/prometheus
+        access: proxy
+        editable: true
+        isDefault: false
+      - name: tempo
+        type: tempo
+        url: http://tempo-query-frontend.tempo:3200
+        access: proxy
+        editable: true
+        isDefault: false

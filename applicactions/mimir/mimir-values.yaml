@@ -1,0 +1,14 @@
+nginx:
+  enabled: false
+gateway:
+  enabledNonEnterprise: true
+Compactor:
+  limits:
+  # Delete from storage metrics data older than 1 month.
+    compactor_blocks_retention_period: 30d
+ingester: 
+  zoneAwareReplication:
+    enabled: false
+store_Gateway:
+  zoneAwareReplication:
+    enabled: false
