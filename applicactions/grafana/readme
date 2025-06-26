@@ -1,0 +1,5 @@
+Command lines:
+
+helm install grafana grafana/grafana -n grafana 
+helm upgrade grafana grafana/grafana -n grafana -f grfana-values.yaml
+helm uninstall grafana grafana/grafana -n grafana

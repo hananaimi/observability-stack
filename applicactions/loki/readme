@@ -1,3 +1,9 @@
+Command lines:
+
+helm install loki grafana/loki -n loki -f loki-values.yaml
+helm upgrade loki grafana/loki -n loki -f loki-values.yaml
+helm uninstall loki grafana/loki -n loki
+
 NAME: loki
 LAST DEPLOYED: Thu Jun 19 16:43:20 2025
 NAMESPACE: loki
